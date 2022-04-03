@@ -7,13 +7,17 @@
     <title>Order summary</title>
     <link rel="icon" href="./assets/img/favicon-32x32.png" type="icon">
     <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width:376px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="container">
-        <picture class="container__img"><img src="./assets/icons/pattern-background-mobile.svg" alt="imagen de fondo"></picture>
+        <picture class="container__img">
+            <source media="(min-width:376px)" srcset="./assets/icons/pattern-background-desktop.svg">
+            <img class="container__img__ola" src="./assets/icons/pattern-background-mobile.svg" alt="imagen de fondo">
+        </picture>
         <section class="card">
             <img class="card__img-cover" src="./assets/icons/illustration-hero.svg" alt="mujer escuchando musica">
             <article class="card__cont-info">
@@ -28,7 +32,10 @@
                 </section>
                 <a class="box-plans__link" href="/">Change</a>
             </article>
-
+            <button class="boton-pay">Proceed to Payment</button>
+            <article class="card__container_link">
+                <a class="card__link-cancel-order" href="/">Cancel Order</a>
+            </article>
         </section>
     </main>
 </body>

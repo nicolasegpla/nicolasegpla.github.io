@@ -15,21 +15,33 @@ html {
     font-family: 'Red Hat Display', sans-serif;
 }
 .container {
-    width: 375px;
+    width: 100%;
     height: 100vh;
     background-color: var(--Pale-blue);
     margin: 0 auto;
     position: relative;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
+.container__img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container__img__ola {
+    width: 100%;
+    object-fit: cover;
+}
 .card {
     width: 320px;
     height: auto;
     background-color: #fff;
     margin: 0 auto;
     position: absolute;
-    top: 50px;
-    left: 28px;
     border-radius: 15px;
 }
 .card__img-cover {
@@ -56,7 +68,6 @@ html {
     line-height: 2.5rem;
     color: var(--Desaturated-blue);
 }
-
 .box-plans {
     background-color: var(--Very-pale-blue);
     width: 85%;
@@ -88,5 +99,31 @@ html {
 .box-plans__link {
     font-size: 1.2rem;
     color: var(--Bright-blue);
+    font-weight: 700;
+}
+.boton-pay {
+    width: 85%;
+    height: 45px;
+    margin-left: 24px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--Bright-blue);
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'Red Hat Display', sans-serif;
+    color: #fff;
+    box-shadow: 0 28px 18px -18px var(--Bright-blue) ;
+    cursor: pointer;
+}
+.card__container_link {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card__link-cancel-order {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--Desaturated-blue);
     font-weight: 700;
 }
